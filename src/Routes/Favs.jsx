@@ -4,14 +4,11 @@ import { useEstadosGlobalesContext } from "../Components/utils/global.context";
 
 const Favs = () => {
   const { theme } = useEstadosGlobalesContext();
-
   const favs = JSON.parse(localStorage.getItem("favorites")) || [];
-
   const handleFavs = () => {
    const newFavs = favs.filter((fav) => fav.id !== id);
     localStorage.setItem("favorites", JSON.stringify(newFavs));
   };
-
   return (
     <div className={theme}>
       <h1>Dentistas Favoritas</h1>

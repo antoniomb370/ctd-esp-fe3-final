@@ -11,7 +11,6 @@ import { links } from "./Components/utils/links";
 
 function App() {
   const { home, contacto, favs, dentista } = links;
-
   return (
     <div className="App">
       <Navbar />
@@ -19,7 +18,7 @@ function App() {
         <Route path={home.path} element={<Home />} />
         <Route path={`${dentista.path}/:id`} element={<Detail />} />
         <Route path={favs.path} element={<Favs />} />
-        <Route path={contacto.path} element={<Contact />} /> 
+        <Route path={contacto.path} element={<Contact />} />
       </Routes>
       <Footer />
     </div>

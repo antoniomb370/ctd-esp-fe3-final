@@ -11,7 +11,6 @@ const Navbar = () => {
   const handleTheme = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
-
   return (
     <nav className={theme}>
      
@@ -23,5 +22,4 @@ const Navbar = () => {
     </nav>
   );
 };
-
 export default Navbar;

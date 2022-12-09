@@ -5,13 +5,11 @@ import { useEstadosGlobalesContext } from "../Components/utils/global.context";
 
 const Home = () => {
   const { theme, odontologos, setOdontologos } = useEstadosGlobalesContext();
-
   useEffect(() => {
     axios("https://jsonplaceholder.typicode.com/users").then((res) => {
       setOdontologos(res.data);
     });
   }, []);
-
   return (
     <main className={theme}>
       <h1>Home</h1>
@@ -25,10 +23,7 @@ const Home = () => {
           />
         ))}
       </div>
-      
     </main>
-    
   );
 };
-
 export default Home;

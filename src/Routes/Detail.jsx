@@ -5,19 +5,15 @@ import { useEstadosGlobalesContext } from "../Components/utils/global.context";
 const Detail = () => {
   const { odontologos, theme } = useEstadosGlobalesContext();
   const { id } = useParams();
-
   const [odontologo, setOdontologo] = useState(undefined);
-
   useEffect(() => {
     const o = odontologos.find((odontologo) => {
       return odontologo.id == id;
     });
     setOdontologo(o);
   }, [odontologos]);
-
   return (
     <div className={theme}>
-     
       {odontologo && (
         <table>
           <thead>
@@ -38,7 +34,6 @@ const Detail = () => {
           </tbody>
         </table>
       )}
-     
     </div>
   );
 };
