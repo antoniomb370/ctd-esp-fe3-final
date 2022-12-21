@@ -23,7 +23,7 @@ const Card = ({ name, username, id }) => {
   return (
     <div className="card">
       <Link to={`${links.dentista.path}/${id}`}>
-        <img src="./images/doctora.jpg" alt={username} />
+        <img src="../images/doctora.jpg" alt={username} />
         <h4>{name}</h4>
         <p>{username}</p>
       </Link>
