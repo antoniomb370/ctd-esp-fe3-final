@@ -1,12 +1,10 @@
+
 {
   "name": "ctd-esp-fe3-final",
   "private": true,
-  "homepage": "http://antoniomb370.github.io/ctd-esp-fe3-final",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
