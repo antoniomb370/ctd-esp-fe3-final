@@ -1,15 +1,19 @@
 {
   "name": "ctd-esp-fe3-final",
   "private": true,
+  "homepage": "http://antoniomb370.github.io/ctd-esp-fe3-final",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy": "gh-peges -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "axios": "^1.2.0",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.4"
