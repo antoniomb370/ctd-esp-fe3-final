@@ -9,6 +9,7 @@ const Footer = () => {
   return (
 
     <footer className={theme}>
+      <h1>cambios</h1>
       <img className="logoFooter" src={logoDigitalHouse.link} alt={logoDigitalHouse.name} />
       <img className="logos" src={logoFacebook.link} alt={logoFacebook.name} />
       <img className="logos" src={logoInstagram.link} alt={logoInstagram.name} />
