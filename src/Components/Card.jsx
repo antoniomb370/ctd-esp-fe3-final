@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { links } from "./utils/links";
-
+import { LinksLogo } from "./utils/LinksLogo";
+const {logoAvatar}=LinksLogo
 const Card = ({ name, username, id }) => {
   const [isFav, setIsFav] = useState(false);
   useEffect(() => {
@@ -23,7 +24,7 @@ const Card = ({ name, username, id }) => {
   return (
     <div className="card">
       <Link to={`${links.dentista.path}/${id}`}>
-        <img src="https://i.pinimg.com/564x/56/d1/c0/56d1c032884032f4216b9bc790c00a1e.jpg" alt={username} />
+        <img src={logoAvatar.link} alt={username} />
         <h4>{name}</h4>
         <p>{username}</p>
       </Link>
