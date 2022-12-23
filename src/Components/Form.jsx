@@ -89,7 +89,7 @@ const Form = () => {
           />
           <div>{emailVal}</div>
         </div>
-        <button type="submit">Send</button>
+        <button type="submit">enviar</button>
       </form>
     </div>
   )
